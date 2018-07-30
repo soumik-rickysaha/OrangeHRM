@@ -1,0 +1,63 @@
+2018-06-20 01:07:12 INFO  Way2Automation:20 - Creating Webdriver object
+2018-06-20 01:07:15 INFO  Way2Automation:27 - Webdriver object created
+2018-06-20 01:07:15 INFO  Way2Automation:31 - Launching Browser
+2018-06-20 01:07:18 INFO  Way2Automation:39 - Browser has been launched
+2018-06-24 20:30:31 INFO  Way2Automation:20 - Creating Webdriver object
+2018-06-24 20:30:38 INFO  Way2Automation:27 - Webdriver object created
+2018-06-24 20:30:38 INFO  Way2Automation:31 - Launching Browser
+2018-06-24 20:30:41 INFO  Way2Automation:39 - Browser has been launched
+2018-06-24 20:30:41 INFO  Way2Automation:65 - Logging into the application
+2018-06-24 20:30:42 INFO  Way2Automation:75 - Entering the Username : jamessmith
+2018-06-24 20:30:43 INFO  Way2Automation:77 - Entering the Password : qwerty12345
+2018-06-24 20:30:43 INFO  Way2Automation:79 - Clicking on the submit button
+2018-06-24 20:30:46 INFO  Way2Automation:82 - Verifying if login was sucessful
+2018-06-24 20:30:46 INFO  Way2Automation:48 - Initializing Webelements and driver
+2018-06-24 20:30:46 INFO  Way2Automation:62 - Navigating to Menu Widget
+2018-06-24 20:30:53 INFO  Way2Automation:70 - Switching to Submeny frame
+2018-06-24 20:30:53 INFO  Way2Automation:72 - Navigating through submenu
+2018-06-24 20:38:41 INFO  Way2Automation:20 - Creating Webdriver object
+2018-06-24 20:38:45 INFO  Way2Automation:27 - Webdriver object created
+2018-06-24 20:38:45 INFO  Way2Automation:31 - Launching Browser
+2018-06-24 20:38:46 INFO  Way2Automation:39 - Browser has been launched
+2018-06-24 20:38:46 INFO  Way2Automation:48 - Initializing Webelements and driver
+2018-06-24 20:38:46 INFO  Way2Automation:62 - Navigating to Menu Widget
+2018-06-24 20:38:51 INFO  Way2Automation:70 - Switching to Submeny frame
+2018-06-24 20:39:17 INFO  Way2Automation:20 - Creating Webdriver object
+2018-06-24 20:39:21 INFO  Way2Automation:27 - Webdriver object created
+2018-06-24 20:39:21 INFO  Way2Automation:31 - Launching Browser
+2018-06-24 20:39:23 INFO  Way2Automation:39 - Browser has been launched
+2018-06-24 20:39:23 INFO  Way2Automation:48 - Initializing Webelements and driver
+2018-06-24 20:39:23 INFO  Way2Automation:62 - Navigating to Menu Widget
+2018-06-24 20:39:28 INFO  Way2Automation:70 - Switching to Submeny frame
+2018-06-24 20:41:32 INFO  Way2Automation:20 - Creating Webdriver object
+2018-06-24 20:41:36 INFO  Way2Automation:27 - Webdriver object created
+2018-06-24 20:41:36 INFO  Way2Automation:31 - Launching Browser
+2018-06-24 20:41:37 INFO  Way2Automation:39 - Browser has been launched
+2018-06-24 20:41:37 INFO  Way2Automation:65 - Logging into the application
+2018-06-24 20:41:39 INFO  Way2Automation:75 - Entering the Username : jamessmith
+2018-06-24 20:41:39 INFO  Way2Automation:77 - Entering the Password : qwerty12345
+2018-06-24 20:41:39 INFO  Way2Automation:79 - Clicking on the submit button
+2018-06-24 20:41:42 INFO  Way2Automation:82 - Verifying if login was sucessful
+2018-06-24 20:41:42 INFO  Way2Automation:48 - Initializing Webelements and driver
+2018-06-24 20:41:42 INFO  Way2Automation:62 - Navigating to Menu Widget
+2018-06-24 20:41:48 INFO  Way2Automation:70 - Switching to Submeny frame
+2018-06-24 20:41:48 INFO  Way2Automation:72 - Navigating through submenu
+2018-06-24 20:50:17 INFO  Way2Automation:20 - Creating Webdriver object
+2018-06-24 20:50:21 INFO  Way2Automation:27 - Webdriver object created
+2018-06-24 20:50:21 INFO  Way2Automation:31 - Launching Browser
+2018-06-24 20:50:23 INFO  Way2Automation:39 - Browser has been launched
+2018-06-24 20:50:23 INFO  Way2Automation:48 - Initializing Webelements and driver
+2018-06-24 20:50:23 INFO  Way2Automation:62 - Navigating to Menu Widget
+2018-06-24 20:50:49 INFO  Way2Automation:20 - Creating Webdriver object
+2018-06-24 20:50:52 INFO  Way2Automation:27 - Webdriver object created
+2018-06-24 20:50:52 INFO  Way2Automation:31 - Launching Browser
+2018-06-24 20:50:53 INFO  Way2Automation:39 - Browser has been launched
+2018-06-24 20:50:53 INFO  Way2Automation:65 - Logging into the application
+2018-06-24 20:50:55 INFO  Way2Automation:75 - Entering the Username : jamessmith
+2018-06-24 20:50:55 INFO  Way2Automation:77 - Entering the Password : qwerty12345
+2018-06-24 20:50:55 INFO  Way2Automation:79 - Clicking on the submit button
+2018-06-24 20:50:58 INFO  Way2Automation:82 - Verifying if login was sucessful
+2018-06-24 20:50:58 INFO  Way2Automation:48 - Initializing Webelements and driver
+2018-06-24 20:50:58 INFO  Way2Automation:62 - Navigating to Menu Widget
+2018-06-24 20:51:05 INFO  Way2Automation:74 - Switching to Submeny frame
+2018-06-24 20:51:05 INFO  Way2Automation:76 - Navigating through submenu

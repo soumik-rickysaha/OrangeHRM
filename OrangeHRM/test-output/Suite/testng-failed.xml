@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="URL" value="https://opensource-demo.orangehrmlive.com/"/>
+  <test name="Test(failed)">
+    <parameter name="URL" value="https://opensource-demo.orangehrmlive.com/"/>
+    <classes>
+      <class name="Prac.OrangeHRM.LoginTest">
+        <methods>
+          <include name="TestSetup"/>
+          <include name="LoginToAppTest"/>
+        </methods>
+      </class> <!-- Prac.OrangeHRM.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
