@@ -2,59 +2,27 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8921" started-at="2018-07-30T21:10:22Z" finished-at="2018-07-30T21:10:31Z">
+  <suite name="OrangeHRMSuite" duration-ms="222058" started-at="2018-09-26T20:31:02Z" finished-at="2018-09-26T20:34:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8921" started-at="2018-07-30T21:10:22Z" finished-at="2018-07-30T21:10:31Z">
+    <test name="OrangeHRMTest" duration-ms="222058" started-at="2018-09-26T20:31:02Z" finished-at="2018-09-26T20:34:44Z">
       <class name="Prac.OrangeHRM.LoginTest">
-        <test-method status="PASS" signature="TestSetup()[pri:0, instance:Prac.OrangeHRM.LoginTest@59ec2012]" name="TestSetup" is-config="true" duration-ms="8878" started-at="2018-07-31T02:40:22Z" finished-at="2018-07-31T02:40:31Z">
+        <test-method status="PASS" signature="TestSetup()[pri:0, instance:Prac.OrangeHRM.LoginTest@2f686d1f]" name="TestSetup" is-config="true" duration-ms="222034" started-at="2018-09-27T02:01:02Z" finished-at="2018-09-27T02:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetup -->
-        <test-method status="FAIL" signature="LoginToAppTest(java.lang.String)[pri:1, instance:Prac.OrangeHRM.LoginTest@59ec2012]" name="LoginToAppTest" duration-ms="23" started-at="2018-07-31T02:40:31Z" finished-at="2018-07-31T02:40:31Z">
+        <test-method status="FAIL" signature="LoginToAppTest(java.lang.String)[pri:1, instance:Prac.OrangeHRM.LoginTest@2f686d1f]" name="LoginToAppTest" duration-ms="6" started-at="2018-09-27T02:04:44Z" finished-at="2018-09-27T02:04:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[URLLink]]>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unhandled inspector error: {"code":-32000,"message":"Cannot navigate to invalid URL"}
-  (Session info: chrome=67.0.3396.99)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-9UQGMJ6', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\SOUMIK\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: aa7c7d87e170e7e616efdb8b5f3a9a34]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {"code":-32000,"message":"Cannot navigate to invalid URL"}
-  (Session info: chrome=67.0.3396.99)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-9UQGMJ6', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\SOUMIK\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: aa7c7d87e170e7e616efdb8b5f3a9a34
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:271)
-	at Prac.OrangeHRM.LoginTest.LoginToAppTest(LoginTest.java:29)
+              <![CDATA[java.lang.NullPointerException
+	at Prac.OrangeHRM.LoginTest.LoginToAppTest(LoginTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,15 +49,40 @@ Session ID: aa7c7d87e170e7e616efdb8b5f3a9a34
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToAppTest -->
-        <test-method status="PASS" signature="EndSession()[pri:0, instance:Prac.OrangeHRM.LoginTest@59ec2012]" name="EndSession" is-config="true" duration-ms="1199" started-at="2018-07-31T02:40:31Z" finished-at="2018-07-31T02:40:32Z">
+        <test-method status="FAIL" signature="EndSession()[pri:0, instance:Prac.OrangeHRM.LoginTest@2f686d1f]" name="EndSession" is-config="true" duration-ms="0" started-at="2018-09-27T02:04:44Z" finished-at="2018-09-27T02:04:44Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at Prac.OrangeHRM.LoginTest.EndSession(LoginTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndSession -->
       </class> <!-- Prac.OrangeHRM.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- OrangeHRMTest -->
+  </suite> <!-- OrangeHRMSuite -->
 </testng-results>

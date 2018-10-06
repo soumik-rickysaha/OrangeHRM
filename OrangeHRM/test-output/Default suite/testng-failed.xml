@@ -7,7 +7,7 @@
         <methods>
           <include name="TestSetup"/>
           <include name="EndSession"/>
-          <include name="LoginToAppTest" invocation-numbers="0"/>
+          <include name="LoginToAppTest"/>
         </methods>
       </class> <!-- Prac.OrangeHRM.LoginTest -->
     </classes>

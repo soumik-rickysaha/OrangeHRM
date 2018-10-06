@@ -1,6 +1,8 @@
 package Prac.OrangeHRM;
 
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
@@ -16,7 +18,7 @@ public class LoginTest{
 	LoginPage LP;
 	
 	@BeforeTest	
-	public void TestSetup() {
+	public void TestSetup() throws MalformedURLException {
 		ALib=new AppLib();
 		driver=ALib.getDriver();
 		LP=new LoginPage(driver);
@@ -29,6 +31,7 @@ public class LoginTest{
 		driver.get(url);
 		LP.userName.sendKeys("Admin");
 		LP.passWord.sendKeys("admin123");
+		Thread.sleep(10000);
 		LP.loginButton.click();		
 	}
 	
