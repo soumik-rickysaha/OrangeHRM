@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeHRMSuite" duration-ms="9124" started-at="2018-10-20T19:50:40Z" finished-at="2018-10-20T19:50:49Z">
+  <suite name="OrangeHRMSuite" duration-ms="14110" started-at="2018-10-20T20:50:52Z" finished-at="2018-10-20T20:51:06Z">
     <groups>
     </groups>
-    <test name="OrangeHRMTest" duration-ms="9124" started-at="2018-10-20T19:50:40Z" finished-at="2018-10-20T19:50:49Z">
-      <class name="Prac.OrangeHRM.LoginTest">
-        <test-method status="PASS" signature="TestSetup()[pri:0, instance:Prac.OrangeHRM.LoginTest@2f686d1f]" name="TestSetup" is-config="true" duration-ms="3844" started-at="2018-10-21T01:20:40Z" finished-at="2018-10-21T01:20:44Z">
+    <test name="OrangeHRMTest" duration-ms="14110" started-at="2018-10-20T20:50:52Z" finished-at="2018-10-20T20:51:06Z">
+      <class name="Prac.OrangeHRM.Create_Admin_User">
+        <test-method status="PASS" signature="TestSetup()[pri:0, instance:Prac.OrangeHRM.Create_Admin_User@2f686d1f]" name="TestSetup" is-config="true" duration-ms="3857" started-at="2018-10-21T02:20:52Z" finished-at="2018-10-21T02:20:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetup -->
-        <test-method status="PASS" signature="LoginToAppTest(java.lang.String)[pri:1, instance:Prac.OrangeHRM.LoginTest@2f686d1f]" name="LoginToAppTest" duration-ms="5219" started-at="2018-10-21T01:20:44Z" finished-at="2018-10-21T01:20:49Z">
+        <test-method status="PASS" signature="LoginToAppTest(java.lang.String)[pri:1, instance:Prac.OrangeHRM.Create_Admin_User@2f686d1f]" name="LoginToAppTest" duration-ms="5470" started-at="2018-10-21T02:20:56Z" finished-at="2018-10-21T02:21:02Z">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToAppTest -->
-        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:Prac.OrangeHRM.LoginTest@2f686d1f]" name="VerifyLogin" duration-ms="43" started-at="2018-10-21T01:20:49Z" depends-on-methods="Prac.OrangeHRM.LoginTest.LoginToAppTest" finished-at="2018-10-21T01:20:49Z">
+        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:Prac.OrangeHRM.Create_Admin_User@2f686d1f]" name="VerifyLogin" duration-ms="4768" started-at="2018-10-21T02:21:02Z" depends-on-methods="Prac.OrangeHRM.Create_Admin_User.LoginToAppTest" finished-at="2018-10-21T02:21:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLogin -->
-        <test-method status="PASS" signature="EndSession()[pri:0, instance:Prac.OrangeHRM.LoginTest@2f686d1f]" name="EndSession" is-config="true" duration-ms="600" started-at="2018-10-21T01:20:49Z" finished-at="2018-10-21T01:20:50Z">
+        <test-method status="PASS" signature="EndSession()[pri:0, instance:Prac.OrangeHRM.Create_Admin_User@2f686d1f]" name="EndSession" is-config="true" duration-ms="624" started-at="2018-10-21T02:21:06Z" finished-at="2018-10-21T02:21:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndSession -->
-      </class> <!-- Prac.OrangeHRM.LoginTest -->
+      </class> <!-- Prac.OrangeHRM.Create_Admin_User -->
     </test> <!-- OrangeHRMTest -->
   </suite> <!-- OrangeHRMSuite -->
 </testng-results>

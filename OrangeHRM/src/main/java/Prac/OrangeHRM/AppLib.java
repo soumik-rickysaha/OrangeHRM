@@ -16,7 +16,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 class AppLib {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public WebDriverWait wait;
 	public DesiredCapabilities cap = DesiredCapabilities.chrome();
 	public String ProjectPath = System.getProperty("user.dir");
