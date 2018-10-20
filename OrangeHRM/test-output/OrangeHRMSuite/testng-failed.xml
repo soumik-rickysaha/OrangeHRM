@@ -7,9 +7,9 @@
     <classes>
       <class name="Prac.OrangeHRM.LoginTest">
         <methods>
+          <include name="VerifyLogin"/>
           <include name="TestSetup"/>
           <include name="EndSession"/>
-          <include name="LoginToAppTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- Prac.OrangeHRM.LoginTest -->
     </classes>

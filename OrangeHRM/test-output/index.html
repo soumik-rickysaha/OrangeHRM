@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMSuite" title="Prac.OrangeHRM.LoginTest" hash-for-method="LoginToAppTest(https://opensource-demo.orangehrmlive.com/)">LoginToAppTest(https://opensource-demo.orangehrmlive.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMSuite" title="Prac.OrangeHRM.LoginTest" hash-for-method="VerifyLogin">VerifyLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OrangeHRMSuite -->
@@ -128,6 +133,13 @@
                   </a> <!-- LoginToAppTest(https://opensource-demo.orangehrmlive.com/) -->
                   <span class="method-name">LoginToAppTest</span>
                   <span class="parameters">(https://opensource-demo.orangehrmlive.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLogin">
+                  </a> <!-- VerifyLogin -->
+                  <span class="method-name">VerifyLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +197,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginToAppTest')
 data.setCell(0, 2, 'Prac.OrangeHRM.LoginTest')
-data.setCell(0, 3, 20493);
+data.setCell(0, 3, 5219);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'VerifyLogin')
+data.setCell(1, 2, 'Prac.OrangeHRM.LoginTest')
+data.setCell(1, 3, 43);
 window.suiteTableData['OrangeHRMSuite']= { tableData: data, tableDiv: 'times-div-OrangeHRMSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-OrangeHRMSuite">
               </div> <!-- times-div-OrangeHRMSuite -->
             </div> <!-- times-div -->
@@ -227,11 +243,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginToAppTest(https://opensource-demo.orangehrmlive.com/)</span>
-                <span class="method-start">6607 ms</span>
+                <span class="method-start">3854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLogin</span>
+                <span class="method-start">9077 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">EndSession</span>
-                <span class="method-start">27159 ms</span>
+                <span class="method-start">9135 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

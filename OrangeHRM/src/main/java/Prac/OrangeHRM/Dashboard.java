@@ -7,33 +7,34 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-class LoginPage{
-	
-	@FindBy(how=How.ID,using="txtUsername")
-	WebElement userName;
-	
-	@FindBy(how=How.ID,using="txtPassword")
-	WebElement passWord;
-	
-	@FindBy(how=How.ID,using="btnLogin")
-	WebElement loginButton;
+public class Dashboard {
+
+	@FindBy(how=How.XPATH,using="//*[@id=\"menu_admin_viewAdminModule\"]/b")
+	WebElement Admin;
 	
 	
-	//Declare other Variables under here
+	
+	
+	
+	
+//	####################################################
+//				Variable Declaration
+//	####################################################
+	
 	WebDriver driver;
-	public LoginPage(WebDriver driver) {
+	
+	public Dashboard(WebDriver driver) {
 		try {
 			this.driver=driver;
-			AjaxElementLocatorFactory Factory= new AjaxElementLocatorFactory(driver, 30);
+			AjaxElementLocatorFactory Factory=new AjaxElementLocatorFactory(driver, 30);
 			PageFactory.initElements(Factory, this);
-			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	public WebElement getUsername() {
-		return userName;
+	public WebElement getAdminLink() {
+		return Admin;
 	}
 }
