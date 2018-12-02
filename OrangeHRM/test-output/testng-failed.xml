@@ -5,13 +5,14 @@
   <test name="OrangeHRMTest(failed)">
     <parameter name="URLLink" value="https://opensource-demo.orangehrmlive.com/"/>
     <classes>
-      <class name="Prac.OrangeHRM.LoginTest">
+      <class name="Prac.OrangeHRM.Create_Admin_User">
         <methods>
           <include name="TestSetup"/>
+          <include name="LoginToAppTest"/>
           <include name="EndSession"/>
-          <include name="LoginToAppTest" invocation-numbers="0"/>
+          <include name="VerifyLogin"/>
         </methods>
-      </class> <!-- Prac.OrangeHRM.LoginTest -->
+      </class> <!-- Prac.OrangeHRM.Create_Admin_User -->
     </classes>
   </test> <!-- OrangeHRMTest(failed) -->
 </suite> <!-- Failed suite [OrangeHRMSuite] -->

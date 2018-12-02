@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Prac.OrangeHRM.LoginTest">
+      <class name="Prac.OrangeHRM.Create_Admin_User">
         <methods>
           <include name="TestSetup"/>
-          <include name="EndSession"/>
           <include name="LoginToAppTest"/>
+          <include name="EndSession"/>
+          <include name="VerifyLogin"/>
         </methods>
-      </class> <!-- Prac.OrangeHRM.LoginTest -->
+      </class> <!-- Prac.OrangeHRM.Create_Admin_User -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

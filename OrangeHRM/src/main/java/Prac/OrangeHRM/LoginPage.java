@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 class LoginPage{
 	
@@ -23,7 +24,9 @@ class LoginPage{
 	public LoginPage(WebDriver driver) {
 		try {
 			this.driver=driver;
-			PageFactory.initElements(driver, this);
+			AjaxElementLocatorFactory Factory= new AjaxElementLocatorFactory(driver, 30);
+			PageFactory.initElements(Factory, this);
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

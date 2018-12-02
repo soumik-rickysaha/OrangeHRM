@@ -5,7 +5,7 @@
   <test name="OrangeHRMTest">
 	<parameter name="URLLink" value="https://opensource-demo.orangehrmlive.com/"/>
     <classes>
-      <class name="Prac.OrangeHRM.LoginTest"/>
+      <class name="Prac.OrangeHRM.Create_Admin_User"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
