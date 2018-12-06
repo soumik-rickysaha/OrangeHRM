@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [OrangeHRMSuite]">
-  <parameter name="URLLink" value="https://opensource-demo.orangehrmlive.com/"/>
-  <test name="OrangeHRMTest(failed)">
-    <parameter name="URLLink" value="https://opensource-demo.orangehrmlive.com/"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="Prac.OrangeHRM.Create_Admin_User">
+      <class name="Prac.OrangeHRM.PIM_User">
         <methods>
           <include name="TestSetup"/>
           <include name="LoginToAppTest"/>
-          <include name="EndSession"/>
-          <include name="VerifyLogin"/>
         </methods>
-      </class> <!-- Prac.OrangeHRM.Create_Admin_User -->
+      </class> <!-- Prac.OrangeHRM.PIM_User -->
     </classes>
-  </test> <!-- OrangeHRMTest(failed) -->
-</suite> <!-- Failed suite [OrangeHRMSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

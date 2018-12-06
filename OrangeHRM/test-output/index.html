@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-OrangeHRMSuite">
-                    <span>D:\GIT REPO\OrangeHRM\OrangeHRM\testng.xml</span>
+                    <span>C:\Projects\OrangeHRM\OrangeHRM\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,12 +101,12 @@
                     <div class="method-list-content passed suite-OrangeHRMSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMSuite" title="Prac.OrangeHRM.Create_Admin_User" hash-for-method="LoginToAppTest(https://opensource-demo.orangehrmlive.com/)">LoginToAppTest(https://opensource-demo.orangehrmlive.com/)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMSuite" title="Prac.OrangeHRM.PIM_User" hash-for-method="LoginToAppTest(https://opensource-demo.orangehrmlive.com/)">LoginToAppTest(https://opensource-demo.orangehrmlive.com/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMSuite" title="Prac.OrangeHRM.Create_Admin_User" hash-for-method="VerifyLogin">VerifyLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMSuite" title="Prac.OrangeHRM.PIM_User" hash-for-method="testPIMSearch">testPIMSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OrangeHRMSuite -->
@@ -124,7 +124,7 @@
           <div class="suite-OrangeHRMSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Prac.OrangeHRM.Create_Admin_User</span>
+              <span class="class-name">Prac.OrangeHRM.PIM_User</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -137,9 +137,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyLogin">
-                  </a> <!-- VerifyLogin -->
-                  <span class="method-name">VerifyLogin</span>
+                  <a name="testPIMSearch">
+                  </a> <!-- testPIMSearch -->
+                  <span class="method-name">testPIMSearch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +147,7 @@
         </div> <!-- panel OrangeHRMSuite -->
         <div panel-name="test-xml-OrangeHRMSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\GIT REPO\OrangeHRM\OrangeHRM\testng.xml</span>
+            <span class="header-content">C:\Projects\OrangeHRM\OrangeHRM\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -157,7 +157,7 @@
   &lt;test name=&quot;OrangeHRMTest&quot;&gt;
     &lt;parameter name=&quot;URLLink&quot; value=&quot;https://opensource-demo.orangehrmlive.com/&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Prac.OrangeHRM.Create_Admin_User&quot;/&gt;
+      &lt;class name=&quot;Prac.OrangeHRM.PIM_User&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OrangeHRMTest --&gt;
 &lt;/suite&gt; &lt;!-- OrangeHRMSuite --&gt;
@@ -200,17 +200,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginToAppTest')
-data.setCell(0, 2, 'Prac.OrangeHRM.Create_Admin_User')
-data.setCell(0, 3, 5470);
+data.setCell(0, 2, 'Prac.OrangeHRM.PIM_User')
+data.setCell(0, 3, 9545);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyLogin')
-data.setCell(1, 2, 'Prac.OrangeHRM.Create_Admin_User')
-data.setCell(1, 3, 4768);
+data.setCell(1, 1, 'testPIMSearch')
+data.setCell(1, 2, 'Prac.OrangeHRM.PIM_User')
+data.setCell(1, 3, 2796);
 window.suiteTableData['OrangeHRMSuite']= { tableData: data, tableDiv: 'times-div-OrangeHRMSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-OrangeHRMSuite">
               </div> <!-- times-div-OrangeHRMSuite -->
             </div> <!-- times-div -->
@@ -236,22 +236,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Prac.OrangeHRM.Create_Admin_User</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Prac.OrangeHRM.PIM_User</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">TestSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginToAppTest(https://opensource-demo.orangehrmlive.com/)</span>
-                <span class="method-start">3865 ms</span>
+                <span class="method-start">4099 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">VerifyLogin</span>
-                <span class="method-start">9338 ms</span>
+                <span class="method-name">testPIMSearch</span>
+                <span class="method-start">13647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
-                <span class="method-name">EndSession</span>
-                <span class="method-start">14121 ms</span>
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">16492 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
