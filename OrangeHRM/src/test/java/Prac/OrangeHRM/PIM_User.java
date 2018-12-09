@@ -2,6 +2,7 @@ package Prac.OrangeHRM;
 
 import static org.testng.Assert.assertEquals;
 
+import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -16,12 +17,12 @@ import org.testng.annotations.Test;
 public class PIM_User {
 	WebDriver driver;
 	LoginPage LP;
+	AppLib Alib;
 	PIM P;
 	@BeforeTest	
-	public void TestSetup(){
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	public void TestSetup() throws MalformedURLException{
+		Alib = new AppLib();
+		driver=Alib.getDriver();
 		LP=new LoginPage(driver);
 		P=new PIM(driver);
 	}
@@ -35,11 +36,15 @@ public class PIM_User {
 		String PIMtext = P.getPIMtext();
 		Assert.assertTrue(PIMtext.contains("PIM"));
 	}
-	@Test(dependsOnMethods= {"LoginToAppTest"})
+	@Test(enabled=false)//(dependsOnMethods= {"LoginToAppTest"})
 	public void testPIMSearch(){
 		P.clickonPIMModule().setEmployeeName("John").setid("0003").clickSearch();
 	}
-	@AfterSuite
+	@Test(dependsOnMethods= {"LoginToAppTest"})
+	public void testAddEmployee(){
+		P.clickonPIMModule().clickOnAddEmployee().UploadPhoto();
+	}
+	@AfterSuite(enabled=false)
 	public void quitBrowser(){
 		driver.quit();
 	}

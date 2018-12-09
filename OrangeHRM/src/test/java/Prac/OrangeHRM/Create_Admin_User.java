@@ -38,7 +38,7 @@ public class Create_Admin_User{
 	public void LoginToAppTest(String url) throws InterruptedException {
 		driver.get(url);
 		LP.userName.sendKeys("Admin");
-		LP.passWord.sendKeys("admin123");
+		LP.passWord.sendKeys("admin123");   
 		LP.loginButton.click();	
 		assertEquals(Dashbrd.getAdminLink().isDisplayed(), true);
 	}

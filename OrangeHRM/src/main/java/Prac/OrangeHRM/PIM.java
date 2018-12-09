@@ -8,7 +8,8 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class PIM {
 
-	@FindBy(xpath="//*[@id='menu_pim_viewPimModule']/b") WebElement PIM_Module;
+	@FindBy(xpath="//*[@id='menu_pim_viewPimModule']") WebElement PIM_Module;
+	//Employee List
 	@FindBy(id="empsearch_employee_name_empName") WebElement Employee_Name;
 	@FindBy(id="empsearch_id") WebElement id;
 	@FindBy(id="empsearch_employee_status") WebElement Employee_Status;
@@ -18,6 +19,13 @@ public class PIM {
 	@FindBy(id="empsearch_sub_unit") WebElement Sub_Unit;
 	@FindBy(id="searchBtn") WebElement Search;
 	@FindBy(id="resetBtn") WebElement Reset;
+	//Add Employee
+	@FindBy(id="menu_pim_addEmployee")WebElement Add_Employee;
+	@FindBy(xpath="//input[@id='firstName']")WebElement First_Name;
+	@FindBy(xpath="//input[@id='middleName']")WebElement Middle_Name;
+	@FindBy(xpath="//input[@id='lastName']")WebElement Last_Name;
+	@FindBy(xpath="//input[@id='employeeId']")WebElement Employee_ID;
+	@FindBy(xpath="//input[@id='photofile']")WebElement Photo;
 	
 	WebDriver driver;
 	
@@ -50,6 +58,14 @@ public class PIM {
 	}
 	public String getPIMtext(){
 		return PIM_Module.getText();
+	}
+	public PIM clickOnAddEmployee(){
+		Add_Employee.click();
+		return this;
+	}
+	public PIM UploadPhoto(){
+		Photo.sendKeys("F:\\abhi\\img351.jpg");
+		return this;
 	}
 	
 	

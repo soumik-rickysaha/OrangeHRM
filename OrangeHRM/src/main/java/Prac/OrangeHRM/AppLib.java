@@ -4,10 +4,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.CapabilityType;
@@ -17,6 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 class AppLib {
 	public static WebDriver driver;
+	public ChromeOptions ops;
 	public WebDriverWait wait;
 	public DesiredCapabilities cap = DesiredCapabilities.chrome();
 	public String ProjectPath = System.getProperty("user.dir");
@@ -28,8 +31,14 @@ class AppLib {
 
 	public void NormalRun() {
 		System.setProperty("webdriver.chrome.driver",ProjectPath.replace("\\", "\\\\") + "\\Drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver, 30);
+		//System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
+		//System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+		ops = new ChromeOptions();
+		ops.addArguments("--disable-notifications");
+		ops.addArguments("--disable-infobars");
+		//ops.setPageLoadStrategy(PageLoadStrategy.NONE);
+		driver = new ChromeDriver(ops);
+		//wait = new WebDriverWait(driver, 30);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}

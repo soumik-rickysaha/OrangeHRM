@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeHRMSuite" duration-ms="16448" started-at="2018-12-06T04:14:44Z" finished-at="2018-12-06T04:15:01Z">
+  <suite name="OrangeHRMSuite" duration-ms="16876" started-at="2018-12-09T08:34:27Z" finished-at="2018-12-09T08:34:44Z">
     <groups>
     </groups>
-    <test name="OrangeHRMTest" duration-ms="16448" started-at="2018-12-06T04:14:44Z" finished-at="2018-12-06T04:15:01Z">
+    <test name="OrangeHRMTest" duration-ms="16876" started-at="2018-12-09T08:34:27Z" finished-at="2018-12-09T08:34:44Z">
       <class name="Prac.OrangeHRM.PIM_User">
-        <test-method status="PASS" signature="TestSetup()[pri:0, instance:Prac.OrangeHRM.PIM_User@402a079c]" name="TestSetup" is-config="true" duration-ms="4087" started-at="2018-12-06T09:44:44Z" finished-at="2018-12-06T09:44:49Z">
+        <test-method status="PASS" signature="TestSetup()[pri:0, instance:Prac.OrangeHRM.PIM_User@5f341870]" name="TestSetup" is-config="true" duration-ms="4322" started-at="2018-12-09T14:04:27Z" finished-at="2018-12-09T14:04:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetup -->
-        <test-method status="PASS" signature="LoginToAppTest(java.lang.String)[pri:1, instance:Prac.OrangeHRM.PIM_User@402a079c]" name="LoginToAppTest" duration-ms="9545" started-at="2018-12-06T09:44:49Z" finished-at="2018-12-06T09:44:58Z">
+        <test-method status="PASS" signature="LoginToAppTest(java.lang.String)[pri:1, instance:Prac.OrangeHRM.PIM_User@5f341870]" name="LoginToAppTest" duration-ms="9550" started-at="2018-12-09T14:04:31Z" finished-at="2018-12-09T14:04:41Z">
           <params>
             <param index="0">
               <value>
@@ -22,14 +22,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToAppTest -->
-        <test-method status="PASS" signature="testPIMSearch()[pri:0, instance:Prac.OrangeHRM.PIM_User@402a079c]" name="testPIMSearch" duration-ms="2796" started-at="2018-12-06T09:44:58Z" depends-on-methods="Prac.OrangeHRM.PIM_User.LoginToAppTest" finished-at="2018-12-06T09:45:01Z">
+        <test-method status="PASS" signature="testAddEmployee()[pri:0, instance:Prac.OrangeHRM.PIM_User@5f341870]" name="testAddEmployee" duration-ms="2984" started-at="2018-12-09T14:04:41Z" depends-on-methods="Prac.OrangeHRM.PIM_User.LoginToAppTest" finished-at="2018-12-09T14:04:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPIMSearch -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:Prac.OrangeHRM.PIM_User@402a079c]" name="quitBrowser" is-config="true" duration-ms="954" started-at="2018-12-06T09:45:01Z" finished-at="2018-12-06T09:45:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
+        </test-method> <!-- testAddEmployee -->
       </class> <!-- Prac.OrangeHRM.PIM_User -->
     </test> <!-- OrangeHRMTest -->
   </suite> <!-- OrangeHRMSuite -->
