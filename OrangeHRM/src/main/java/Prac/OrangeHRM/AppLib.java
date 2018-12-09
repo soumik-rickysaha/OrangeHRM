@@ -27,7 +27,11 @@ class AppLib {
 	}
 
 	public void NormalRun() {
-		System.setProperty("webdriver.chrome.driver",ProjectPath.replace("\\", "\\\\") + "\\Drivers\\chromedriver.exe");
+		if(System.getProperty("os.name").contains("Windows 10")) {
+			System.setProperty("webdriver.chrome.driver",ProjectPath.replace("\\", "\\\\") + "\\Drivers\\chromedriver.exe");
+		}else {
+			System.setProperty("webdriver.chrome.driver",ProjectPath + "/Drivers/chromedriver");
+		}
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 30);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
